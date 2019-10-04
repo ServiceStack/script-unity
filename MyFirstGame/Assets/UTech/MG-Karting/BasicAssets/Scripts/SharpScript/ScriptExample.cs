@@ -16,7 +16,6 @@ public class ScriptExample : MonoBehaviour
         public string name(GameObject o, string name) => o.name = name; 
         public Transform transform(Component c) => c.transform;
         public Color color(Material m, Color color) { m.SetColor("_Color", color); return color; }
-        public float mass(Rigidbody rb, float value) => rb.mass = value;
         public Vector3 position(Transform t) => t.position;
         public Vector3 position(Transform t, Vector3 position) => t.position = position;
         public Vector3 localScale(Transform t) => t.localScale;
